@@ -1,0 +1,96 @@
+:root{
+    --bgcolor: #9326ea;
+    --content: 1280px;
+
+}
+
+/* 많이쓰는 변수 다음은 많이쓰는 공통클래스 */
+
+
+.abs{position: absolute;}
+.rel{
+    position: relative;
+}
+.fix{
+    position: fixed;
+}
+.d-flex{
+    display: flex;
+}
+.jcc{justify-content: center;}
+.jcb{justify-content: space-between;}
+.aic{align-items: center;}
+
+.flex-column{
+    flex-direction: column;
+}
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+
+/* layout */
+
+#banner{
+    height: 650px;
+    background-color: var(--bgcolor);
+}
+#banner img{
+    max-width: 100%;
+    opacity: 0;
+}
+.container{
+    width: var(--content);
+    margin: 0 auto;
+    height: 100%;
+}
+.left, .right{
+    width: 50%;
+    padding: 0 20px;
+}
+.left .plain{
+    left: 0;
+    top: 55%;
+    width: 39%;
+    z-index: 1000;
+
+}
+.left .camp1{
+    width: 50%;
+    left: 25%;
+    top: 20%;
+
+}
+.left .camp2{
+    top: 20%;
+
+}
+.left .shallow{
+    left: 15%;
+
+}
+.right{
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: end;
+}
+
+.right .abs{
+    left:-26%;
+    right:-15%;
+    
+}
+
+.right .abs img:nth-child(1){
+    height: 35%;
+    width: 35%;
+    
+    
+}
+.right .abs img:nth-child(2){
+    height: 25%;
+    width: 25%;
+    
+}
